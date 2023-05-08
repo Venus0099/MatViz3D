@@ -4,6 +4,8 @@
 
 #include <QMainWindow>
 #include <QButtonGroup>
+#include <QWidget>
+#include <QSlider>
 
 
 QT_BEGIN_NAMESPACE
@@ -33,8 +35,17 @@ private slots:
 
     void on_Colormap_stateChanged(int arg1);
 
+
+    //void on_Start_clicked();
+
+    //void on_Rectangle10_valueChanged(int value);
+
+protected:
+    void keyPressEvent(QKeyEvent *event);
+
 private:
     Ui::MainWindow *ui;
+
 };
 
 #endif // MAINWINDOW_H
